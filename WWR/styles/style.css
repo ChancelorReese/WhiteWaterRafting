@@ -1,6 +1,13 @@
-body {
-    max-width: 1600px;
+#content {
+    max-width: 2000px;
     margin: 0 auto;
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
     background-color: #63CCCA;
     color: white;
 }
@@ -8,6 +15,23 @@ body {
 header {
     background-color: #7F0799;
     color: white;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo, .icon {
+    width: 80%;
 }
 
 nav a:hover {
@@ -42,6 +66,7 @@ nav a:hover {
 nav a {
     text-align: center;
     color: white;
+    padding: 35px;
     text-decoration: none;
 }
 
