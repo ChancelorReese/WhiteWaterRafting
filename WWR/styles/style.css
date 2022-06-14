@@ -36,10 +36,11 @@ body {
 }
 
 header {
-  
+    width: 100%;
     color: white;
     display: grid;
     grid-template-columns: 150px auto;
+    align-items: center;
 }
 
 #logo_link {
@@ -58,8 +59,8 @@ nav {
 }
 
 nav a:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: blue;
 }
 
 .book, .join {
