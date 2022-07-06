@@ -3,8 +3,7 @@
 }
 
 .img2{
-    width: 30%;
-    height: 80%;
+    width: 50%;
 }
 
 .img3 {
@@ -18,4 +17,31 @@
 .img5 {
     width: 50%;
     height: 50%;
+}
+
+.logo {
+    width: 125px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: white;
+}
+
+#Homegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    border: solid black 5px;
 }
