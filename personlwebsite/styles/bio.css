@@ -10,6 +10,14 @@
     height: 60%;
     width: 50%;
     float: left;
+    border: solid black 5px;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #522B47;
+}
+
+.main_img:hover {
+    opacity: .6;
+    transform: scale(1.03);
 }
 
 p {
@@ -54,6 +62,7 @@ h1 {
     box-shadow: 5px 5px 10px #522B47;
     justify-content: space-around;
     align-items: center;
+    background-color: #607B7D;
 }
 
 .images:hover {
