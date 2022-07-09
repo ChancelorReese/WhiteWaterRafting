@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display:ital@1&display=swap');
 
+#content {
+    max-width: 2000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .img1{
     width: 100%;
     border: solid black 5px;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #522B47;
-    
 }
 
 .img1:hover { 
@@ -93,7 +98,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 h1 {

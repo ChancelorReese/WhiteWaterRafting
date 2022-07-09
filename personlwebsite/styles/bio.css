@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display:ital@1&display=swap');
+
+#content {
+    max-width: 2000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main_img {
+    height: 60%;
+    width: 50%;
+    float: left;
+}
+
+p {
+    color: white;
+    background-color: #607B7D;
+    padding: 1px;
+    margin: auto;
+    font: 1.5rem Playfair Display, Helvetica, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: white;
+    background-color: #3A606E;
+    font: 1.5rem Merryweather;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo {
+    width: 125px;
+}
+
+h1 {
+    border: solid white 5px;
+    text-align: center;
+    margin: 1em auto;
+    width: fit-content;
+    font: 2.5rem Merryweather;
+}
+
+
+.images {
+    display: flex;
+    grid-template-columns: auto;
+    box-shadow: 5px 5px 10px #522B47;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.images:hover {
+    opacity: .6;
+    transform: scale(1.03);
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3A606E;
+}
