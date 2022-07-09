@@ -59,17 +59,11 @@ h1 {
 .images {
     display: flex;
     grid-template-columns: auto;
-    box-shadow: 5px 5px 10px #522B47;
     justify-content: space-around;
     align-items: center;
     background-color: #607B7D;
 }
 
-.images:hover {
-    opacity: .6;
-    transform: scale(1.03);
-    
-}
 
 footer{
     display: flex;
