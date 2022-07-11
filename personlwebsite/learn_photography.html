@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/learn_photography.css">
     <title>Shaelee'e Photography</title>
 </head>
 <body>
     <header>
         <a href="home.html">
-            <img class="logo" src="./images/logo (2).jpg" alt="Shae's Logo">
+            <img class="logo" src="./images/logo.jpg" alt="Shae's Logo">
         </a>
         <nav>
             <a href="home.html">Pictures & Pricing</a>
@@ -19,6 +19,32 @@
             
         </nav>
     </header>
+
+    <main>
+        <div id="feedback"></div>
+        <h1>Learn Photography</h1>
+        <img class="learn" src="./images/learn_photography.JPG" alt="Learn Photography">
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+             <li>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="user_name">
+             </li>
+             <li>
+               <label for="mail">E-mail:</label>
+               <input type="email" id="mail" name="user_email">
+             </li>
+             <li>
+               <label for="msg">Message:</label>
+               <textarea id="msg" name="user_message"></textarea>
+             </li>
+             <li class="button">
+                <button type="submit">Send your message</button>
+             </li>
+            </ul>
+           </form>
+    </main>
+
 
 
     <footer>
