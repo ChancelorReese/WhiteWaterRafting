@@ -10,6 +10,7 @@ header {
 
 .learn {
     width: 100%;
+    border: solid black 5px;
 }
 
 body{
@@ -127,4 +128,6 @@ form {
 
 p {
   text-align: center;
+  color: white;
+  font: 1rem Playfair Display, Helvetica, sans-serif;
 }
