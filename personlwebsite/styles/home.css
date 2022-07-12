@@ -51,6 +51,12 @@
     transform: scale(1.03);
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #607B7D;
+}
+
 .img4 {
     width: 100%;
     grid-column: 2/3;
