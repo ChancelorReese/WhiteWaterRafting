@@ -24,6 +24,11 @@
         <div id="feedback"></div>
         <h1>Learn Photography</h1>
         <img class="learn" src="./images/learn_photography.JPG" alt="Learn Photography">
+        <p>
+            We also have tutorials online and in person for people who want to learn photography and make it their dream profession.
+            <br> We also provide cameras and lenses for practice. We charge separate for studios and equipment. Every session is an hour long and have multiple student in it. 
+            <br> <br> Please fill out the form below to be a part of the world of photography. Our representitives will get back to your within 24 to 48 hours. 
+        </p>
         <form action="/my-handling-form-page" method="post">
             <ul>
              <li>
@@ -31,12 +36,12 @@
                <input type="text" id="name" name="user_name">
              </li>
              <li>
-               <label for="mail">E-mail:</label>
-               <input type="email" id="mail" name="user_email">
+               <label for="address">Address:</label>
+               <input type="address" id="mail" name="address">
              </li>
              <li>
-               <label for="msg">Message:</label>
-               <textarea id="msg" name="user_message"></textarea>
+               <label for="phone_number">Phone Number:</label>
+               <textarea id="number" name="user_number"></textarea>
              </li>
              <li class="button">
                 <button type="submit">Send your message</button>
@@ -62,6 +67,22 @@
             </a>
         </div>
     </footer>
-    
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was ente
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>

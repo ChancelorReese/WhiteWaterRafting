@@ -23,12 +23,12 @@ nav {
 }
 
 footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #3A606E;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3A606E;
+  padding: 25px 100px;
 }
-
 
 #feedback {
     background-color: antiquewhite;
@@ -116,4 +116,8 @@ form {
     margin: 1em auto;
     width: fit-content;
     font: 2.5rem Merryweather;
+}
+
+p {
+  text-align: center;
 }
