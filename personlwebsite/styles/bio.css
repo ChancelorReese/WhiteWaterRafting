@@ -46,7 +46,8 @@ h1{
     margin: 10px;
     line-height: 48px;
     color:white;
-    font: 1.48rem Playfair Display, Helvetica, sans-serif;
+    font: 1.56rem Playfair Display, Helvetica, sans-serif;
+    margin-top: -30px;
 }
 
 h3{
@@ -55,8 +56,8 @@ h3{
     width: fit-content;
     color: white;
     font: 2rem Merryweather;
+    margin-top: -5px;
 }
-
 
 
 .p2{
@@ -64,7 +65,8 @@ h3{
     grid-row: 3/4;
     line-height: 50px;
     color: white;
-    font: 1.48rem Playfair Display, Helvetica, sans-serif;
+    font: 1.56rem Playfair Display, Helvetica, sans-serif;
+    margin-top: -5px;
 }
 
 footer{

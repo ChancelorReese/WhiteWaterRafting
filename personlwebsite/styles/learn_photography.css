@@ -118,11 +118,11 @@ form {
   }
 
   h1 {
-    border: solid white 5px;
     text-align: center;
     margin: 1em auto;
     width: fit-content;
     font: 2.5rem Merryweather;
+    color: white;
 }
 
 p {
