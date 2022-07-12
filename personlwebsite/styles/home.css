@@ -13,6 +13,7 @@
     box-shadow: 5px 5px 10px #522B47;
     grid-column: 1/2;
     grid-row: 2/3;
+    
 }
 
 .img1:hover { 
@@ -25,6 +26,7 @@
     grid-column: 2/3;
     grid-row: 3/4;
     height: 90%;
+    margin-top: 20px;
     border: solid black 5px;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #522B47;
@@ -100,7 +102,7 @@ header {
 #Homegrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+   
     background-color: #607B7D;
 }
 
@@ -113,6 +115,7 @@ nav {
 h1 {
     grid-column: 1/3;
     grid-row: 1/2;
+    
     text-align: center;
     margin: 1em auto;
     height: fit-content;
@@ -133,6 +136,7 @@ footer{
 
 h3{
     text-align: center;
+
     margin: 1em auto;
     width: fit-content;
     color: white;
@@ -142,14 +146,13 @@ h3{
 p{
     padding: 6px;
     margin: 20px;
-    border: solid #522B47 3px;
     line-height: 56.5px;
     color: white;
     font: 1.5rem Playfair Display, Helvetica, sans-serif;
 }
 
 .p1 {
-    line-height: 46.5px;
+    line-height: 55px;
     margin-top: -30px;
 }
 
@@ -178,7 +181,7 @@ p{
 }
 
 .div2{
-    margin-top: -40px;
+    margin-top: -25px;
     
 }
 
