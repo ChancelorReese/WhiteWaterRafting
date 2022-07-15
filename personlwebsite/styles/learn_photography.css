@@ -24,16 +24,17 @@
   /* make this element invisible until we are ready for it */
   display: none;       
 }
+
 .moveDown {
   margin-top: 3em;
 }
 
 header {
-    display: grid;
-    grid-template-columns: 150px auto;
-    background-color: white;
-    background-color: #3A606E;
-    font: 1.5rem Merryweather;
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color: white;
+  background-color: #3A606E;
+  font: 1.5rem Merryweather;
 }
 
 body{
@@ -73,20 +74,6 @@ footer{
   background-color: #3A606E;
   padding: 25px 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 form {
     /* Center the form on the page */
