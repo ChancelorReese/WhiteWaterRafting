@@ -20,17 +20,21 @@
     </header>
 
     <main id="grid3">
+        <div id="feedback"></div>
         <a class="hello" href="#">
         <h1> Learn Photography</h1>
         </a>
         
         <img class="home" src="./images/learn_photography.JPG" alt="Learn Photography">
-        <p>We also have tutorials online and in person for people who want to learn photography and make it their dream profession.
-            <br> We also provide cameras and lenses for practice. We charge separate for studios and equipment. Every session is an hour long and have multiple student in it. 
-            <br> <br> Please fill out the form below to be a part of the world of photography. Our representitives will get back to your within 24 to 48 hours. 
+        <div class="text" >
+        <p>We also have tutorials online and in person for people who want to learn photography and make it their dream profession.</p>
+            <p>
+             We also provide cameras and lenses for practice. We charge separate for studios and equipment. Every session is an hour long and have multiple student in it. </p>
+             <p> Please fill out the form below to be a part of the world of photography. Our representitives will get back to your within 24 to 48 hours. 
         </p>
+    </div>
 
-        <form action="/my-handling-form-page" method="post">
+        <form class="form2" action="/my-handling-form-page" method="post">
             <ul>
              <li>
                <label for="name">Name:</label>
@@ -55,9 +59,35 @@
              </li>
             </ul>
            </form>
+           <div id="feedback2"></div>
+           <h2>Contat us for an appointment</h2>
+
+           <form action="/my-handling-form-page" method="post">
+            <ul>
+             <li>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="user_name">
+             </li>
+              <li>
+                <label for="name">What type of Event is it?:</label>
+                <input type="text" id="name" name="user_name">
+              </li>
+             <li>
+               <label for="name">How did you hear about us:</label>
+               <input type="text" id="name" name="user_name">
+             </li>
+             <li>
+               <label for="msg">Tell us more about your Event and what you are looking for?</label>
+               <textarea id="msg" name="user_msg"></textarea>
+             </li>
+             <li class="button">
+                <button type="submit">Send your message</button>
+             </li>
+            </ul>
+           </form>
 
 
-    </main>
+        </main>
 
 
 
@@ -85,7 +115,7 @@
         formElement.addEventListener('submit', function(e) {
             // stop the form from doing the default action.
             e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was ente
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
             feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
             // make the feedback element visible.
             feedbackElement.style.display = "block";
@@ -93,5 +123,22 @@
             document.body.classList.toggle('moveDown');
         });
     </script>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement2 = document.getElementById('feedback2');
+        // get the form so we can read what was entered in it.
+        const formElement2 = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit2', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement2.innerHTML = 'Hello '+ formElement2.user_name.value +'! XYZ';
+            // make the feedback element visible.
+            feedbackElement2.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+        </script>
 </body>
 </html>
